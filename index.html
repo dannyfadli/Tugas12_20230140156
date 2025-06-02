@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Form Peminatan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>Form Pendaftaran Mahasiswa</h2>
+
+  <label for="nama">Nama</label>
+  <input type="text" id="nama" placeholder="Masukkan nama">
+
+  <label for="nim">NIM</label>
+  <input type="text" id="nim" placeholder="Masukkan NIM">
+
+  <label for="jurusan">Jurusan</label>
+  <select id="jurusan">
+    <option value="Teknik Informatika">Teknik Informatika</option>
+    <option value="Sistem Informasi">Sistem Informasi</option>
+    <option value="Teknologi Informasi">Teknologi Informasi</option>
+  </select>
+
+  <label for="angkatan">Angkatan</label>
+  <select id="angkatan">
+    <option value="2020">2020</option>
+    <option value="2021">2021</option>
+    <option value="2022">2022</option>
+    <option value="2023">2023</option>
+    <option value="2024">2024</option>
+  </select>
+
+  <label for="tanggal">Tanggal Lahir</label>
+  <input type="date" id="tanggal">
+
+  <div class="radio-group">
+    <label>Peminatan pada bidang:</label><br>
+    <label for="programming">Programming</label><br>
+    <input type="radio" id="programming" name="peminatan" value="programming" checked>
+    <label for="desain">Desain</label><br>
+    <input type="radio" id="desain" name="peminatan" value="desain">
+    <label for="jaringan">Jaringan</label><br>
+    <input type="radio" id="jaringan" name="peminatan" value="jaringan">
+    <label for="data">Data</label>
+    <input type="radio" id="data" name="peminatan" value="data">
+  </div>
+
+  <label for="alamat">Alamat</label>
+  <textarea id="alamat" placeholder="Masukkan alamat"></textarea>
+
+  <button onclick="tampilkanData()">Kirim</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
